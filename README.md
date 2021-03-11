@@ -37,7 +37,8 @@ Details :-
 				
 						This file consist of the tasks that needs to be executed on the server.
 						
-						Step 1 to 5 - is used for creating a directory "/Desktop/Automation/downloadsfile" (Needs to be changed as per your server)
+						Step 1 to 5 - is used for creating a directory "/Desktop/Automation/downloadsfile" 
+						(Needs to be changed as per your server)
                         
                         Downloading the Vagrant and Virtual BOX dmg files , and installing it on MacOs
 
@@ -52,7 +53,8 @@ Details :-
 					
 					This file contains variables used by task main.yml such as 
 					
-							i) The Path that you want to create and download your files to (should use the path where your ansible playbook is placed ).
+							i) The Path that you want to create and download your files to 
+							(should use the path where your ansible playbook is placed ).
 							
 							ii) The web url to downlad the Virtual Box and Vagrant.
 							
@@ -60,7 +62,8 @@ Details :-
 						
 	ansible.cfg
 		
-		This file is used to add the inventory file path so that we can avoid passing the same while running the ansible playbook
+		This file is used to add the inventory file path so that we can avoid passing the same while 
+		running the ansible playbook
 	
 	
 	Vagrantfile
