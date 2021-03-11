@@ -1,6 +1,6 @@
 # ProvisioningVM
 
-This is Ansible playbook to install and run a Centos Virtual Machine on Your Mac
+This is Ansible playbook to install and run a Centos 7 , Virtual Machine on Your MacOS
 
 # Tools Used
 
