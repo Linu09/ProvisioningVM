@@ -24,7 +24,8 @@ Details :-
 
 	Main.yml
 		
-		This is the main playbook which includes the role that need to be called and passing the host name as variable during the exeuction of the playbook.
+		This is the main playbook which includes the role that need to be called and passing the host name as 
+		variable during the exeuction of the playbook.
 
 
 	roles/VMautomation
@@ -37,7 +38,8 @@ Details :-
 				
 						This file consist of the tasks that needs to be executed on the server.
 						
-						Step 1 to 5 - is used for creating a directory "/Desktop/Automation/downloadsfile" 
+						Step 1 to 5 - is used for creating a directory 
+						"/Desktop/Automation/downloadsfile" 
 						(Needs to be changed as per your server)
                         
                         Downloading the Vagrant and Virtual BOX dmg files , and installing it on MacOs
@@ -46,7 +48,8 @@ Details :-
 
                         step 7 - is used to bring down the Vagrant centos 7 Virtual Machines.
 							
-						Note :- This step will take time as the IOS image is a huge file to be downloaded.
+						Note :- This step will take time as the IOS image is a 
+						huge file to be downloaded.
 				
 				
 				roles/VMautomation/vars/main.yml
