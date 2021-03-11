@@ -1,0 +1,76 @@
+---
+# tasks file for roles/VMautomation
+
+# Creates a directory
+   - name: Create a Directory
+     file:
+       path: "{{ DirPath }}"
+       state: directory
+       mode: 0755
+     tags:
+     - MacnewInstall
+
+# Downloads the oracle Virtual Box Package
+   - name: Install Virtual Box
+     get_url:
+       url: "{{ VirtualBoxUrl }}"
+       dest: "{{ DirPath }}"
+       mode: 0755
+     tags:
+     - MacnewInstall
+     
+# Installs the oracle Virtual Box Package into MacOs
+   - name: Installing the VirtualBox Package
+     become: yes
+     shell: |
+             cd "{{ DirPath }}"
+             hdiutil attach VirtualBox-6.1.18-142142-OSX.dmg
+             cd /Volumes/VirtualBox
+             installer -package /Volumes/VirtualBox/VirtualBox.pkg -target "/Volumes/Macintosh HD"
+             cd "{{ DirPath }}"
+             hdiutil detach /Volumes/VirtualBox
+             rm -rf *
+     ignore_errors: yes
+     tags:
+     - MacnewInstall
+
+# Downloads the Vagrant Package
+   - name: Download Vagrant using get_url
+     get_url:
+       url: "{{ VagrantUrl }}"
+       dest: "{{ DirPath }}"
+       mode: 0755
+     tags:
+     - MacnewInstall
+            
+# Installs the VagrantPackage into MacOs    
+   - name: Installing the Vagrant Package
+     become: yes
+     shell: |
+             cd "{{ DirPath }}"
+             hdiutil attach vagrant_2.2.14_x86_64.dmg
+             cd /Volumes/vagrant
+             installer -package /Volumes/vagrant/vagrant.pkg -target "/Volumes/Macintosh HD"
+             cd "{{ DirPath }}"
+             hdiutil detach /Volumes/vagrant
+             rm -rf *
+     ignore_errors: yes
+     tags:
+     - MacnewInstall   
+
+# Bring the Vagrant created Virtual machines UP         
+   - name: Bring the servers up
+     shell: |
+             cd "{{ DirPath }}"
+             vagrant up
+     tags:
+     - MacnewInstall
+     
+# Bring the Vagrant created Virtual machines Down    
+   - name: Bring the servers Down
+     shell: |
+             cd "{{ DirPath }}"
+             vagrant halt
+     tags:
+     - stopVm
+     
