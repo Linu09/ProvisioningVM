@@ -1,40 +1,51 @@
 Vagrant.configure("2") do |config|
 
-config.vm.define "vm01" do |subconfig|
+config.vm.define "das" do |subconfig|
+ENV['LANG']=en_US.utf-8
+ENV['LC_ALL']=en_US.utf-8
 subconfig.vm.box = "centos/7"
-subconfig.vm.hostname = "vm01"
-subconfig.vm.network :private_network, ip: "10.0.0.10"
+subconfig.vm.hostname = "das"
+subconfig.vm.network :private_network, ip: "192.168.1.10", :netmask => "255.255.255.0"
 end
 
-config.vm.define "vm02" do |subconfig|
+config.vm.define "me" do |subconfig|
+ENV['LANG']=en_US.utf-8
+ENV['LC_ALL']=en_US.utf-8
 subconfig.vm.box = "centos/7"
-subconfig.vm.hostname = "vm02"
-subconfig.vm.network :private_network, ip: "10.0.0.11"
+subconfig.vm.hostname = "me"
+subconfig.vm.network :private_network, ip: "192.168.1.11", :netmask => "255.255.255.0"
 end
 
-config.vm.define "vm03" do |subconfig|
+config.vm.define "pcs" do |subconfig|
+ENV['LANG']=en_US.utf-8
+ENV['LC_ALL']=en_US.utf-8
 subconfig.vm.box = "centos/7"
-subconfig.vm.hostname = "vm03"
-subconfig.vm.network :private_network, ip: "10.0.0.12"
+subconfig.vm.hostname = "pcs"
+subconfig.vm.network :private_network, ip: "192.168.1.12", :netmask => "255.255.255.0"
 end
 
-config.vm.define "vm04" do |subconfig|
+config.vm.define "se" do |subconfig|
+ENV['LANG']=en_US.utf-8
+ENV['LC_ALL']=en_US.utf-8
 subconfig.vm.box = "centos/7"
-subconfig.vm.hostname = "vm04"
-subconfig.vm.network :private_network, ip: "10.0.0.13"
+subconfig.vm.hostname = "se"
+subconfig.vm.network :private_network, ip: "192.168.1.13", :netmask => "255.255.255.0"
 end
 
-config.vm.define "vm05" do |subconfig|
+config.vm.define "sources" do |subconfig|
+ENV['LANG']=en_US.utf-8
+ENV['LC_ALL']=en_US.utf-8
 subconfig.vm.box = "centos/7"
-subconfig.vm.hostname = "vm05"
-subconfig.vm.network :private_network, ip: "10.0.0.14"
+subconfig.vm.hostname = "sources"
+subconfig.vm.network :private_network, ip: "192.168.1.14", :netmask => "255.255.255.0"
 end
 
-config.vm.define "vm06" do |subconfig|
+config.vm.define "xms" do |subconfig|
+ENV['LANG']=en_US.utf-8
+ENV['LC_ALL']=en_US.utf-8
 subconfig.vm.box = "centos/7"
-subconfig.vm.hostname = "vm06"
-subconfig.vm.network :private_network, ip: "10.0.0.15"
+subconfig.vm.hostname = "xms"
+subconfig.vm.network :private_network, ip: "192.168.1.15", :netmask => "255.255.255.0"
 end
-
 
 end
