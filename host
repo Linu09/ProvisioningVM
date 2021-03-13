@@ -4,9 +4,9 @@
 
 
 [VirtualMachine]
-das ansible_ssh_host=127.0.0.1 ansible_ssh_port=2200 ansible_ssh_user=vagrant ansible_ssh_private_key_file=/Users/linujoseph/Desktop/BlueMena/Ansible/Vagrant_infra_Provising/.vagrant/machines/das/virtualbox/private_key
-me ansible_ssh_host=127.0.0.1 ansible_ssh_port=2201 ansible_ssh_user=vagrant ansible_ssh_private_key_file=/Users/linujoseph/Desktop/BlueMena/Ansible/Vagrant_infra_Provising/.vagrant/machines/me/virtualbox/private_key
-pcs ansible_ssh_host=127.0.0.1 ansible_ssh_port=2202 ansible_ssh_user=vagrant ansible_ssh_private_key_file=/Users/linujoseph/Desktop/BlueMena/Ansible/Vagrant_infra_Provising/.vagrant/machines/pcs/virtualbox/private_key
-se ansible_ssh_host=127.0.0.1 ansible_ssh_port=2203 ansible_ssh_user=vagrant ansible_ssh_private_key_file=/Users/linujoseph/Desktop/BlueMena/Ansible/Vagrant_infra_Provising/.vagrant/machines/se/virtualbox/private_key
-sources ansible_ssh_host=127.0.0.1 ansible_ssh_port=2204 ansible_ssh_user=vagrant ansible_ssh_private_key_file=/Users/linujoseph/Desktop/BlueMena/Ansible/Vagrant_infra_Provising/.vagrant/machines/sources/virtualbox/private_key
-xms ansible_ssh_host=127.0.0.1 ansible_ssh_port=2205 ansible_ssh_user=vagrant ansible_ssh_private_key_file=/Users/linujoseph/Desktop/BlueMena/Ansible/Vagrant_infra_Provising/.vagrant/machines/xms/virtualbox/private_key
+vm01 ansible_ssh_host=127.0.0.1 ansible_ssh_port=2200 ansible_ssh_user=vagrant ansible_ssh_private_key_file=/Users/linujoseph/Desktop/BlueMena/Ansible/Vagrant_infra_Provising/.vagrant/machines/das/virtualbox/private_key
+vm02 ansible_ssh_host=127.0.0.1 ansible_ssh_port=2201 ansible_ssh_user=vagrant ansible_ssh_private_key_file=/Users/linujoseph/Desktop/BlueMena/Ansible/Vagrant_infra_Provising/.vagrant/machines/me/virtualbox/private_key
+vm03 ansible_ssh_host=127.0.0.1 ansible_ssh_port=2202 ansible_ssh_user=vagrant ansible_ssh_private_key_file=/Users/linujoseph/Desktop/BlueMena/Ansible/Vagrant_infra_Provising/.vagrant/machines/pcs/virtualbox/private_key
+vm04 ansible_ssh_host=127.0.0.1 ansible_ssh_port=2203 ansible_ssh_user=vagrant ansible_ssh_private_key_file=/Users/linujoseph/Desktop/BlueMena/Ansible/Vagrant_infra_Provising/.vagrant/machines/se/virtualbox/private_key
+vm05 ansible_ssh_host=127.0.0.1 ansible_ssh_port=2204 ansible_ssh_user=vagrant ansible_ssh_private_key_file=/Users/linujoseph/Desktop/BlueMena/Ansible/Vagrant_infra_Provising/.vagrant/machines/sources/virtualbox/private_key
+vm06 ansible_ssh_host=127.0.0.1 ansible_ssh_port=2205 ansible_ssh_user=vagrant ansible_ssh_private_key_file=/Users/linujoseph/Desktop/BlueMena/Ansible/Vagrant_infra_Provising/.vagrant/machines/xms/virtualbox/private_key
