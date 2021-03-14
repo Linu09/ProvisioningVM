@@ -1,0 +1,8 @@
+127.0.0.1   localhost localhost.localdomain localhost4 localhost4.localdomain4
+::1         localhost localhost.localdomain localhost6 localhost6.localdomain6
+
+192.168.1.11 das-server das
+192.168.1.12 xms-server xms
+192.168.1.13 me-server me
+192.168.1.14 se-server se
+192.168.1.15 pcs-server pcs
