@@ -61,7 +61,7 @@ Vagrant.configure(2) do |config|
        vb.memory = 2048
        vb.cpus = 1
     end  
-    m.config.vm.network "forwarded_port", guest: 7001, host: 7001
+    m.vm.network "forwarded_port", guest: 7001, host: 7001
     m.vm.provision "shell", inline: $script
   end
   
